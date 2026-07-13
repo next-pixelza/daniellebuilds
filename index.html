@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danielle Builds — Websites, Software &amp; Growth Systems for Ambitious Businesses</title>
+<meta name="description" content="Danielle Builds designs high-performing websites, SEO systems, AI solutions and custom business software that generate leads and automate growth — for founders, startups and property companies who want a premium digital presence.">
+<meta name="keywords" content="custom website design, SEO agency, AI solutions, business automation, SaaS development, web applications, property technology, digital strategy">
+<link rel="canonical" href="https://www.daniellebuilds.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Danielle Builds — Building Websites. Building Software. Building Growth.">
+<meta property="og:description" content="Premium websites, SEO and custom software built to generate leads and automate your business.">
+<meta property="og:url" content="https://www.daniellebuilds.com/">
+<meta property="og:site_name" content="Danielle Builds">
+<meta property="og:image" content="https://www.daniellebuilds.com/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Danielle Builds — Building Websites. Building Software. Building Growth.">
+<meta name="twitter:description" content="High-performing websites, SEO strategy, AI solutions and custom software for founders and property companies.">
+<meta name="twitter:image" content="https://www.daniellebuilds.com/og-image.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Danielle Builds",
+  "description": "Custom website design, SEO, AI solutions and business software development for startups, property companies and established businesses.",
+  "url": "https://www.daniellebuilds.com/",
+  "areaServed": "Worldwide",
+  "priceRange": "$$$",
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom Website Design"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"SEO Strategy"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Solutions"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Business Software Development"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"SaaS Development"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Property Technology"}}
+  ]
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: '#141D23',
+          bg2: '#0E1418',
+          paper: '#F4F0EA',
+          rose: '#C4796F',
+          rose2: '#E89F8C',
+          rosedeep: '#9C5A50',
+          ink: '#14181B',
+          muted: '#9FACB4',
+          muted2: '#6B7680',
+        },
+        fontFamily: {
+          display: ['"Fraunces"', 'serif'],
+          body: ['Inter', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  :root{
+    --bg:#141D23; --bg2:#0E1418; --paper:#F4F0EA;
+    --rose:#C4796F; --rose2:#E89F8C; --rosedeep:#9C5A50;
+    --ink:#14181B; --muted:#9FACB4; --muted2:#6B7680;
+  }
+  html,body{ background:var(--bg); }
+  body{ font-family:'Inter',sans-serif; color:#fff; overflow-x:hidden; cursor:default; }
+  h1,h2,h3,h4,.font-display{ font-family:'Fraunces',serif; font-optical-sizing:auto; }
+  .font-mono{ font-family:'JetBrains Mono',monospace; }
+
+  ::selection{ background:var(--rose); color:#fff; }
+  ::-webkit-scrollbar{ width:9px; }
+  ::-webkit-scrollbar-track{ background:var(--bg2); }
+  ::-webkit-scrollbar-thumb{ background:var(--rose); border-radius:8px; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--rose2); outline-offset:3px; border-radius:4px; }
+
+  /* ---------- grain texture ---------- */
+  .grain{ position:fixed; inset:0; z-index:60; pointer-events:none; opacity:.05; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- custom cursor glow ---------- */
+  #cursorGlow{ position:fixed; top:0; left:0; width:420px; height:420px; border-radius:50%;
+    background:radial-gradient(circle, rgba(196,121,111,0.16), transparent 70%);
+    transform:translate(-50%,-50%); pointer-events:none; z-index:1; mix-blend-mode:screen;
+    transition:opacity .3s ease; will-change:transform;
+  }
+
+  /* ---------- scroll progress ---------- */
+  #scrollProgress{ position:fixed; top:0; left:0; height:3px; width:0%; z-index:70;
+    background:linear-gradient(90deg, var(--rosedeep), var(--rose), var(--rose2));
+    box-shadow:0 0 12px rgba(196,121,111,.6); transition:width .1s linear;
+  }
+
+  /* ---------- gradient text ---------- */
+  .grad-text{ background:linear-gradient(100deg, var(--rose2), var(--rose) 55%, var(--rosedeep));
+    -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+  /* ---------- mesh / aurora blobs ---------- */
+  .aurora{ position:absolute; border-radius:9999px; filter:blur(100px); will-change:transform; }
+  @keyframes drift1{ 0%,100%{ transform:translate(0,0) scale(1); } 50%{ transform:translate(60px,-40px) scale(1.12);} }
+  @keyframes drift2{ 0%,100%{ transform:translate(0,0) scale(1); } 50%{ transform:translate(-50px,50px) scale(0.92);} }
+  @keyframes drift3{ 0%,100%{ transform:translate(0,0); } 33%{ transform:translate(40px,30px);} 66%{ transform:translate(-30px,-20px);} }
+  .a1{ animation:drift1 14s ease-in-out infinite; }
+  .a2{ animation:drift2 18s ease-in-out infinite; }
+  .a3{ animation:drift3 22s ease-in-out infinite; }
+
+  /* ---------- butterfly signature mark ---------- */
+  .butterfly-wing{ transform-origin:120px 140px; animation:flutter 6s ease-in-out infinite; }
+  .butterfly-wing.right{ animation-delay:.15s; }
+  @keyframes flutter{
+    0%,100%{ transform:scaleX(1) rotate(0deg); }
+    50%{ transform:scaleX(0.94) rotate(-1.5deg); }
+  }
+
+  /* ---------- glass ---------- */
+  .glass{ background:rgba(255,255,255,0.04); border:1px solid rgba(232,159,140,0.14);
+    backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
+  .glass-light{ background:rgba(255,255,255,0.55); border:1px solid rgba(20,24,27,0.06);
+    backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
+
+  /* ---------- gradient border on hover (conic) ---------- */
+  .gradient-border{ position:relative; }
+  .gradient-border::before{
+    content:''; position:absolute; inset:0; border-radius:inherit; padding:1px;
+    background:conic-gradient(from var(--angle,0deg), transparent 0 70%, var(--rose2), var(--rose), transparent 100%);
+    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+    opacity:0; transition:opacity .5s ease; animation:rotate-border 4s linear infinite paused;
+  }
+  .gradient-border:hover::before{ opacity:1; animation-play-state:running; }
+  @property --angle{ syntax:'<angle>'; inherits:false; initial-value:0deg; }
+  @keyframes rotate-border{ to{ --angle:360deg; } }
+
+  /* ---------- buttons ---------- */
+  .btn-primary{ position:relative; overflow:hidden; isolation:isolate; }
+  .btn-primary::before{ content:''; position:absolute; inset:0; z-index:-1;
+    background:linear-gradient(120deg, var(--rosedeep), var(--rose) 45%, var(--rose2));
+    background-size:200% 100%; transition:background-position .6s ease; }
+  .btn-primary:hover::before{ background-position:100% 0; }
+  .btn-primary::after{ content:''; position:absolute; top:0; left:-60%; width:40%; height:100%;
+    background:linear-gradient(120deg, transparent, rgba(255,255,255,.4), transparent);
+    transform:skewX(-20deg); transition:left .7s ease; }
+  .btn-primary:hover::after{ left:120%; }
+
+  .btn-outline{ transition:all .4s cubic-bezier(.2,.7,.2,1); }
+  .btn-outline:hover{ background:rgba(232,159,140,.08); border-color:rgba(232,159,140,.5); }
+
+  /* ---------- reveal ---------- */
+  .reveal{ opacity:0; transform:translateY(34px); filter:blur(4px);
+    transition:opacity 1s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1), filter 1s ease; }
+  .reveal.is-visible{ opacity:1; transform:none; filter:blur(0); }
+
+  /* hero word reveal */
+  .word-reveal span{ display:inline-block; opacity:0; transform:translateY(110%) rotate(4deg); animation:word-in .9s cubic-bezier(.16,1,.3,1) forwards; }
+  @keyframes word-in{ to{ opacity:1; transform:translateY(0) rotate(0deg); } }
+
+  /* card lift + tilt handled by JS transform; base transition here */
+  .tilt-card{ transition:transform .25s ease, box-shadow .4s ease, border-color .4s ease; transform-style:preserve-3d; }
+
+  /* nav underline sweep */
+  .nav-link{ position:relative; }
+  .nav-link::after{ content:''; position:absolute; left:0; bottom:-6px; width:0%; height:1.5px;
+    background:linear-gradient(90deg, var(--rose), var(--rose2)); transition:width .4s cubic-bezier(.2,.7,.2,1); }
+  .nav-link:hover::after{ width:100%; }
+
+  /* magnetic wrapper just needs relative + transition */
+  .magnetic{ transition:transform .25s cubic-bezier(.2,.7,.2,1); }
+
+  /* marquee */
+  .marquee-track{ display:flex; width:max-content; animation:marquee 32s linear infinite; }
+  @keyframes marquee{ from{ transform:translateX(0);} to{ transform:translateX(-50%);} }
+
+  /* process connector */
+  .process-line{ stroke-dasharray:1000; stroke-dashoffset:1000; transition:stroke-dashoffset 1.6s cubic-bezier(.2,.7,.2,1); }
+  .process-line.is-visible{ stroke-dashoffset:0; }
+
+  /* counters ring */
+  .ring-anim{ stroke-dasharray:100; stroke-dashoffset:100; transition:stroke-dashoffset 1.6s cubic-bezier(.2,.7,.2,1); }
+
+  /* testimonial track */
+  #testiTrack{ transition:transform .6s cubic-bezier(.2,.7,.2,1); }
+
+  /* wave divider color helpers set via inline fill currentColor */
+  .divider-svg{ display:block; width:100%; height:auto; }
+
+  @media (prefers-reduced-motion: reduce){
+    .a1,.a2,.a3,.butterfly-wing,.marquee-track{ animation:none !important; }
+    .reveal{ opacity:1; transform:none; filter:none; transition:none; }
+    .word-reveal span{ opacity:1; transform:none; animation:none; }
+  }
+
+  @media (pointer:coarse){ #cursorGlow{ display:none; } }
+
+  .section-pad{ padding-top:clamp(4.5rem,10vw,8rem); padding-bottom:clamp(4.5rem,10vw,8rem); }
+
+  /* eyebrow bracket motif */
+  .eyebrow{ display:inline-flex; align-items:center; gap:.5rem; font-family:'JetBrains Mono',monospace;
+    font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; }
+  .eyebrow .bracket{ color:var(--rose2); opacity:.7; }
+
+  /* mobile sticky cta */
+  #mobileCta{ transform:translateY(120%); transition:transform .5s cubic-bezier(.2,.7,.2,1); }
+  #mobileCta.show{ transform:translateY(0); }
+</style>
+</head>
+
+<body class="antialiased">
+
+<div class="grain"></div>
+<div id="cursorGlow"></div>
+<div id="scrollProgress"></div>
+
+<!-- SVG defs: reusable butterfly signature mark -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="butterfly" viewBox="0 0 240 220">
+      <g fill="none" stroke="currentColor" stroke-width="2">
+        <g class="butterfly-wing left">
+          <path d="M120,140 C88,96 40,64 22,96 C4,128 14,172 52,180 C82,186 112,168 120,140 Z"/>
+          <path d="M120,148 C98,164 66,176 56,198 C48,216 66,220 86,208 C104,197 118,172 120,148 Z"/>
+        </g>
+        <g class="butterfly-wing right">
+          <path d="M120,140 C152,54 196,44 214,86 C230,124 210,168 172,174 C144,178 124,162 120,140 Z"/>
+          <path d="M120,150 C146,164 178,182 190,204 C200,220 182,224 160,212 C140,201 122,174 120,150 Z"/>
+        </g>
+        <ellipse cx="120" cy="140" rx="4" ry="10"/>
+        <path d="M117,132 C110,116 96,108 88,112"/>
+        <path d="M123,132 C130,116 144,108 152,112"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header id="siteNav" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+  <nav class="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-20 transition-all duration-500" id="navInner">
+    <a href="#main" class="flex items-center gap-3 group">
+      <svg class="w-9 h-9 text-rose2 group-hover:text-rose transition-colors duration-500" style="animation:none">
+        <use href="#butterfly" width="36" height="36"/>
+      </svg>
+      <span class="font-display font-semibold text-lg tracking-tight text-white">Danielle <span class="text-rose2 italic">Builds</span></span>
+    </a>
+
+    <div class="hidden lg:flex items-center gap-9 font-mono text-[12px] uppercase tracking-widest text-muted">
+      <a href="#services" class="nav-link hover:text-white transition-colors">Services</a>
+      <a href="#why" class="nav-link hover:text-white transition-colors">Why Us</a>
+      <a href="#process" class="nav-link hover:text-white transition-colors">Process</a>
+      <a href="#work" class="nav-link hover:text-white transition-colors">Work</a>
+      <a href="#testimonials" class="nav-link hover:text-white transition-colors">Testimonials</a>
+    </div>
+
+    <a href="#contact" class="magnetic hidden lg:inline-flex items-center gap-2 rounded-full btn-primary text-white font-semibold text-sm px-6 py-3 shadow-[0_8px_28px_rgba(196,121,111,0.35)]">
+      Book Free Consultation
+    </a>
+
+    <button id="mobileBtn" aria-label="Open menu" aria-expanded="false" class="lg:hidden w-10 h-10 grid place-items-center rounded-lg glass text-white">
+      <svg id="iconOpen" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg id="iconClose" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+
+  <div id="mobileMenu" class="hidden lg:hidden mx-4 mb-4 rounded-2xl glass px-6 py-6 flex flex-col gap-5 font-mono text-sm uppercase tracking-widest text-muted">
+    <a href="#services" class="hover:text-white">Services</a>
+    <a href="#why" class="hover:text-white">Why Us</a>
+    <a href="#process" class="hover:text-white">Process</a>
+    <a href="#work" class="hover:text-white">Work</a>
+    <a href="#testimonials" class="hover:text-white">Testimonials</a>
+    <a href="#contact" class="mt-1 inline-flex justify-center rounded-full btn-primary text-white font-semibold px-5 py-3 normal-case">Book Free Consultation</a>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="relative bg-bg text-white overflow-hidden min-h-screen flex items-center">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(196,121,111,0.10),transparent_55%),radial-gradient(ellipse_at_bottom_right,rgba(232,159,140,0.08),transparent_55%)]"></div>
+
+  <div class="aurora a1 bg-rosedeep w-[36rem] h-[36rem] -top-40 -left-40 opacity-30"></div>
+  <div class="aurora a2 bg-rose w-[28rem] h-[28rem] top-16 right-[-8rem] opacity-25"></div>
+  <div class="aurora a3 bg-rose2 w-[22rem] h-[22rem] bottom-[-6rem] left-1/3 opacity-20"></div>
+
+  <!-- huge watermark butterfly -->
+  <svg class="absolute right-[-6%] top-1/2 -translate-y-1/2 w-[46rem] h-[46rem] text-rose opacity-[0.07] pointer-events-none hidden lg:block" aria-hidden="true">
+    <use href="#butterfly" width="736" height="736"/>
+  </svg>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 w-full grid lg:grid-cols-[1.15fr_0.85fr] gap-16 items-center">
+    <div>
+      <div class="reveal inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-rose2 border border-rose2/25 bg-rose2/5 rounded-full px-4 py-2 mb-8" data-reveal>
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none"><use href="#butterfly" width="24" height="24" style="color:currentColor"/></svg>
+        Websites &amp; software, engineered to perform
+      </div>
+
+      <h1 class="font-display font-light leading-[1.03] text-[2.9rem] sm:text-7xl lg:text-[5.2rem] tracking-tight word-reveal">
+        <span style="animation-delay:.05s">Build</span> <span style="animation-delay:.13s">a</span> <span style="animation-delay:.21s">Business</span><br>
+        <span style="animation-delay:.29s">That</span>
+        <span class="grad-text italic font-normal" style="animation-delay:.37s">Works</span>
+        <span style="animation-delay:.45s">While</span><br>
+        <span style="animation-delay:.53s">You</span> <span class="grad-text italic font-normal" style="animation-delay:.61s">Sleep.</span>
+      </h1>
+
+      <p class="reveal mt-8 text-muted text-lg leading-relaxed max-w-xl" data-reveal style="transition-delay:.15s">
+        Danielle Builds designs high-performing websites, engineers SEO systems, and develops custom software that quietly generate leads, book clients, and automate the busywork — so your business keeps moving even when you've clocked off.
+      </p>
+
+      <div class="reveal mt-10 flex flex-wrap items-center gap-4" data-reveal style="transition-delay:.25s">
+        <a href="#contact" class="magnetic btn-primary inline-flex items-center gap-2 rounded-full text-white font-semibold px-8 py-4 shadow-[0_10px_40px_rgba(196,121,111,0.4)] hover:shadow-[0_10px_50px_rgba(196,121,111,0.55)] hover:-translate-y-0.5 transition-all duration-300">
+          Book Free Consultation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#work" class="magnetic btn-outline inline-flex items-center gap-2 rounded-full border border-white/20 text-white font-semibold px-8 py-4">
+          View Our Work
+        </a>
+      </div>
+
+      <!-- trust bar -->
+      <div class="reveal mt-14 flex flex-wrap items-center gap-x-10 gap-y-6" data-reveal style="transition-delay:.35s">
+        <div class="flex items-center gap-3">
+          <div class="flex -space-x-2">
+            <span class="w-8 h-8 rounded-full border-2 border-bg bg-gradient-to-br from-rose to-rosedeep"></span>
+            <span class="w-8 h-8 rounded-full border-2 border-bg bg-gradient-to-br from-rose2 to-rose"></span>
+            <span class="w-8 h-8 rounded-full border-2 border-bg bg-gradient-to-br from-rosedeep to-rose2"></span>
+          </div>
+          <div class="text-xs text-muted"><span class="text-white font-semibold block leading-tight">5.0 rating</span>from 40+ founders</div>
+        </div>
+        <div class="w-px h-9 bg-white/10"></div>
+        <div class="font-mono text-xs text-muted uppercase tracking-wide"><span class="text-white text-xl font-semibold font-body block" data-counter="120">0</span>Projects Shipped</div>
+        <div class="w-px h-9 bg-white/10"></div>
+        <div class="font-mono text-xs text-muted uppercase tracking-wide"><span class="text-white text-xl font-semibold font-body block" data-counter="98">0</span>% Retention</div>
+      </div>
+    </div>
+
+    <!-- Floating UI cards -->
+    <div class="relative h-[500px] hidden md:block reveal" data-reveal style="transition-delay:.2s">
+      <div class="tilt-card absolute top-0 left-2 w-60 glass rounded-2xl p-4 shadow-2xl shadow-black/50 gradient-border">
+        <div class="flex items-center justify-between mb-3">
+          <span class="eyebrow text-rose2"><span class="bracket">&lt;/&gt;</span>SEO Rankings</span>
+          <span class="text-[10px] px-2 py-0.5 rounded-full bg-rose2/15 text-rose2">Live</span>
+        </div>
+        <div class="flex items-end gap-1.5 h-16">
+          <div class="w-3 rounded-t bg-rosedeep/50" style="height:35%"></div>
+          <div class="w-3 rounded-t bg-rosedeep/70" style="height:50%"></div>
+          <div class="w-3 rounded-t bg-rose/70" style="height:40%"></div>
+          <div class="w-3 rounded-t bg-rose" style="height:65%"></div>
+          <div class="w-3 rounded-t bg-rose2" style="height:92%"></div>
+          <div class="w-3 rounded-t bg-rose2" style="height:80%"></div>
+        </div>
+        <p class="mt-3 text-xs text-muted">Keyword #1 <span class="text-rose2 font-semibold">↑ 34 positions</span></p>
+      </div>
+
+      <div class="tilt-card absolute top-16 right-0 w-52 glass rounded-2xl p-4 shadow-2xl shadow-black/50 gradient-border">
+        <span class="eyebrow text-rose2"><span class="bracket">&lt;/&gt;</span>Speed</span>
+        <div class="mt-3 flex items-center gap-3">
+          <div class="relative w-16 h-16 shrink-0">
+            <svg viewBox="0 0 36 36" class="w-16 h-16 -rotate-90">
+              <path d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="3"/>
+              <path data-ring d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" fill="none" stroke="#E89F8C" stroke-width="3" class="ring-anim" stroke-linecap="round"/>
+            </svg>
+            <span class="absolute inset-0 grid place-items-center text-sm font-semibold text-white">98</span>
+          </div>
+          <p class="text-xs text-muted leading-snug">Core Web Vitals passing on every page</p>
+        </div>
+      </div>
+
+      <div class="tilt-card absolute bottom-24 left-0 w-64 glass rounded-2xl p-4 shadow-2xl shadow-black/50 gradient-border">
+        <span class="eyebrow text-rose2"><span class="bracket">&lt;/&gt;</span>Dashboard</span>
+        <div class="mt-3 space-y-2">
+          <div class="flex items-center justify-between text-xs text-muted"><span>Automations running</span><span class="text-white font-semibold">14</span></div>
+          <div class="h-1.5 rounded-full bg-white/10 overflow-hidden"><div class="h-full w-4/5 rounded-full bg-gradient-to-r from-rosedeep to-rose2"></div></div>
+          <div class="flex items-center justify-between text-xs text-muted"><span>Tasks automated / mo</span><span class="text-white font-semibold">1,240</span></div>
+        </div>
+      </div>
+
+      <div class="tilt-card absolute bottom-2 right-4 w-56 glass rounded-2xl p-4 shadow-2xl shadow-black/50 gradient-border">
+        <span class="eyebrow text-rose2"><span class="bracket">&lt;/&gt;</span>Leads</span>
+        <div class="mt-3 flex items-center gap-2">
+          <span class="text-2xl font-display font-bold text-white">+312%</span>
+        </div>
+        <p class="text-xs text-muted mt-1">Qualified leads, first 90 days</p>
+      </div>
+
+      <div class="tilt-card absolute top-[42%] left-[36%] w-48 glass rounded-2xl p-3.5 shadow-2xl shadow-black/50 gradient-border">
+        <span class="eyebrow text-rose2"><span class="bracket">&lt;/&gt;</span>Analytics</span>
+        <svg viewBox="0 0 100 30" class="w-full h-8 mt-2">
+          <polyline points="0,25 15,20 30,22 45,10 60,14 75,4 100,6" fill="none" stroke="#E89F8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative pb-8 flex justify-center">
+    <a href="#trusted" aria-label="Scroll to next section" class="flex flex-col items-center gap-2 text-muted hover:text-rose2 transition-colors">
+      <span class="font-mono text-[10px] uppercase tracking-widest">Scroll</span>
+      <span class="w-5 h-8 rounded-full border border-white/20 flex items-start justify-center p-1">
+        <span class="w-1 h-1.5 rounded-full bg-rose2 animate-bounce"></span>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ TRUSTED BY ============ -->
+<section id="trusted" class="relative bg-bg2 border-t border-white/5 py-14 overflow-hidden">
+  <p class="text-center eyebrow justify-center text-muted mb-8"><span class="bracket">&lt;</span>Trusted by founders &amp; property teams across the UK<span class="bracket">/&gt;</span></p>
+  <div class="relative">
+    <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-bg2 to-transparent z-10"></div>
+    <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-bg2 to-transparent z-10"></div>
+    <div class="marquee-track gap-16 px-8">
+      <div class="flex items-center gap-16 shrink-0 grayscale opacity-50 hover:opacity-100 transition-opacity duration-500">
+        <span class="font-display italic text-2xl text-white">Northgate&nbsp;Estates</span>
+        <span class="font-display italic text-2xl text-white">Verano&nbsp;Homes</span>
+        <span class="font-display italic text-2xl text-white">Bright&nbsp;Ledger</span>
+        <span class="font-display italic text-2xl text-white">Kindred&nbsp;Clinics</span>
+        <span class="font-display italic text-2xl text-white">Marlowe&nbsp;&amp;&nbsp;Co</span>
+        <span class="font-display italic text-2xl text-white">Fenwick&nbsp;Capital</span>
+      </div>
+      <div class="flex items-center gap-16 shrink-0 grayscale opacity-50 pl-16" aria-hidden="true">
+        <span class="font-display italic text-2xl text-white">Northgate&nbsp;Estates</span>
+        <span class="font-display italic text-2xl text-white">Verano&nbsp;Homes</span>
+        <span class="font-display italic text-2xl text-white">Bright&nbsp;Ledger</span>
+        <span class="font-display italic text-2xl text-white">Kindred&nbsp;Clinics</span>
+        <span class="font-display italic text-2xl text-white">Marlowe&nbsp;&amp;&nbsp;Co</span>
+        <span class="font-display italic text-2xl text-white">Fenwick&nbsp;Capital</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="relative bg-paper text-ink">
+  <svg class="divider-svg -mt-px text-paper" viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="currentColor" d="M0,40 C240,90 480,0 720,20 C960,40 1200,100 1440,30 L1440,0 L0,0 Z"/></svg>
+
+  <div class="section-pad max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl reveal" data-reveal>
+      <span class="eyebrow text-rosedeep"><span class="bracket">01 /</span>Services</span>
+      <h2 class="font-display font-medium text-4xl sm:text-5xl mt-5 leading-tight">Every discipline your growth engine needs, <span class="italic grad-text">under one roof.</span></h2>
+      <p class="mt-5 text-muted2 text-lg">From first pixel to production software, we build the full stack of tools your business needs to attract, convert and retain — without stitching together five different agencies.</p>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="reveal tilt-card group rounded-2xl bg-white/70 border border-ink/5 p-7 hover:shadow-2xl hover:shadow-rose/10 hover:-translate-y-2 hover:border-rose/30 transition-all duration-500" data-reveal>
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose to-rosedeep grid place-items-center mb-6 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-rose/20">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Z"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r=".6"/><circle cx="9" cy="6.5" r=".6"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-xl">Custom Website Design</h3>
+        <p class="mt-3 text-muted2 leading-relaxed">Bespoke, high-converting websites built around your brand and buyer journey — never a recycled template.</p>
+      </article>
+
+      <article class="reveal tilt-card group rounded-2xl bg-white/70 border border-ink/5 p-7 hover:shadow-2xl hover:shadow-rose/10 hover:-translate-y-2 hover:border-rose/30 transition-all duration-500" data-reveal style="transition-delay:.06s">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose to-rosedeep grid place-items-center mb-6 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-rose/20">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-xl">SEO</h3>
+        <p class="mt-3 text-muted2 leading-relaxed">Technical, on-page and content SEO systems engineered to compound your organic rankings month over month.</p>
+      </article>
+
+      <article class="reveal tilt-card group rounded-2xl bg-white/70 border border-ink/5 p-7 hover:shadow-2xl hover:shadow-rose/10 hover:-translate-y-2 hover:border-rose/30 transition-all duration-500" data-reveal style="transition-delay:.12s">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose to-rosedeep grid place-items-center mb-6 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-rose/20">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 2-1.5 3-1.5 5v1h-7v-1c0-2-1.5-3-1.5-5a5 5 0 0 1 5-5Z"/><path d="M9 17h6M10 21h4"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-xl">AI Integrations</h3>
+        <p class="mt-3 text-muted2 leading-relaxed">Custom AI assistants, chat agents and workflow copilots that cut hours of manual work into minutes.</p>
+      </article>
+
+      <article class="reveal tilt-card group rounded-2xl bg-white/70 border border-ink/5 p-7 hover:shadow-2xl hover:shadow-rose/10 hover:-translate-y-2 hover:border-rose/30 transition-all duration-500" data-reveal>
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose to-rosedeep grid place-items-center mb-6 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-rose/20">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-xl">Software Development</h3>
+        <p class="mt-3 text-muted2 leading-relaxed">Internal tools, client portals and SaaS platforms designed to scale with your business, not against it.</p>
+      </article>
+
+      <article class="reveal tilt-card group rounded-2xl bg-white/70 border border-ink/5 p-7 hover:shadow-2xl hover:shadow-rose/10 hover:-translate-y-2 hover:border-rose/30 transition-all duration-500" data-reveal style="transition-delay:.06s">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose to-rosedeep grid place-items-center mb-6 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-rose/20">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-xl">Business Automation</h3>
+        <p class="mt-3 text-muted2 leading-relaxed">Connected workflows across your CRM, inbox and finance tools so nothing falls through the cracks.</p>
+      </article>
+
+      <article class="reveal tilt-card group rounded-2xl bg-white/70 border border-ink/5 p-7 hover:shadow-2xl hover:shadow-rose/10 hover:-translate-y-2 hover:border-rose/30 transition-all duration-500" data-reveal style="transition-delay:.12s">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose to-rosedeep grid place-items-center mb-6 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-rose/20">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21v-8l9-6 9 6v8"/><path d="M9 21v-6h6v6"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-xl">Property Technology</h3>
+        <p class="mt-3 text-muted2 leading-relaxed">Listing platforms, portals and booking systems purpose-built for property and real estate businesses.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY DANIELLE BUILDS ============ -->
+<section id="why" class="relative bg-bg text-white overflow-hidden">
+  <svg class="divider-svg -mb-px rotate-180 text-paper" viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="currentColor" d="M0,40 C240,90 480,0 720,20 C960,40 1200,100 1440,30 L1440,0 L0,0 Z"/></svg>
+
+  <div class="aurora a2 bg-rosedeep w-[30rem] h-[30rem] top-1/4 -right-40 opacity-20"></div>
+
+  <div class="section-pad relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[0.85fr_1.15fr] gap-16 items-center">
+    <div class="reveal" data-reveal>
+      <span class="eyebrow text-rose2"><span class="bracket">02 /</span>Why Danielle Builds</span>
+      <h2 class="font-display font-medium text-4xl sm:text-5xl mt-5 leading-tight">Built like a product studio. <span class="italic grad-text">Priced like an agency.</span></h2>
+      <p class="mt-5 text-muted text-lg leading-relaxed">We combine design craft with real engineering discipline, so what you get isn't just beautiful — it's fast, scalable, and built to keep working long after launch day.</p>
+      <a href="#contact" class="magnetic mt-8 inline-flex items-center gap-2 text-rose2 font-semibold hover:gap-3 transition-all duration-300">
+        Start your project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="reveal tilt-card gradient-border glass rounded-2xl p-6 hover:-translate-y-1" data-reveal>
+        <span class="font-mono text-xs text-rose2">01</span>
+        <h3 class="font-display font-semibold text-lg mt-2">Custom Solutions</h3>
+        <p class="mt-2 text-sm text-muted leading-relaxed">Every build starts from your business model, not a template library.</p>
+      </div>
+      <div class="reveal tilt-card gradient-border glass rounded-2xl p-6 hover:-translate-y-1" data-reveal style="transition-delay:.06s">
+        <span class="font-mono text-xs text-rose2">02</span>
+        <h3 class="font-display font-semibold text-lg mt-2">Fast Delivery</h3>
+        <p class="mt-2 text-sm text-muted leading-relaxed">Lean project teams and tight feedback loops mean weeks, not quarters.</p>
+      </div>
+      <div class="reveal tilt-card gradient-border glass rounded-2xl p-6 hover:-translate-y-1" data-reveal style="transition-delay:.12s">
+        <span class="font-mono text-xs text-rose2">03</span>
+        <h3 class="font-display font-semibold text-lg mt-2">Business Focused</h3>
+        <p class="mt-2 text-sm text-muted leading-relaxed">Every decision is measured against one thing: does it move revenue.</p>
+      </div>
+      <div class="reveal tilt-card gradient-border glass rounded-2xl p-6 hover:-translate-y-1" data-reveal style="transition-delay:.18s">
+        <span class="font-mono text-xs text-rose2">04</span>
+        <h3 class="font-display font-semibold text-lg mt-2">SEO Driven</h3>
+        <p class="mt-2 text-sm text-muted leading-relaxed">Search strategy is baked into design and architecture from day one.</p>
+      </div>
+      <div class="reveal tilt-card gradient-border glass rounded-2xl p-6 sm:col-span-2 hover:-translate-y-1" data-reveal style="transition-delay:.24s">
+        <span class="font-mono text-xs text-rose2">05</span>
+        <h3 class="font-display font-semibold text-lg mt-2">Scalable Software</h3>
+        <p class="mt-2 text-sm text-muted leading-relaxed">Architecture that handles your first 100 customers and your next 10,000 without a rebuild.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="relative bg-paper text-ink">
+  <div class="section-pad max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl reveal" data-reveal>
+      <span class="eyebrow text-rosedeep"><span class="bracket">03 /</span>Process</span>
+      <h2 class="font-display font-medium text-4xl sm:text-5xl mt-5 leading-tight">A clear build sequence, <span class="italic grad-text">start to scale.</span></h2>
+      <p class="mt-5 text-muted2 text-lg">No mystery, no scope creep. Five stages, always in this order, so you always know exactly where your project stands.</p>
+    </div>
+
+    <div class="mt-16 relative">
+      <svg class="hidden lg:block absolute top-8 left-0 w-full h-2" viewBox="0 0 1200 4" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="0" y1="2" x2="1200" y2="2" stroke="#14181B22" stroke-width="2"/>
+        <line data-process-line x1="0" y1="2" x2="1200" y2="2" stroke="#C4796F" stroke-width="2" class="process-line"/>
+      </svg>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
+        <div class="reveal relative group" data-reveal>
+          <div class="w-16 h-16 rounded-full bg-white border-2 border-rose grid place-items-center font-display font-bold text-rosedeep text-lg relative z-10 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-rose/30 transition-all duration-500">01</div>
+          <h3 class="font-display font-semibold text-lg mt-5">Discover</h3>
+          <p class="mt-2 text-sm text-muted2 leading-relaxed">We map your goals, customers and competitors before a single pixel is placed.</p>
+        </div>
+        <div class="reveal relative group" data-reveal style="transition-delay:.06s">
+          <div class="w-16 h-16 rounded-full bg-white border-2 border-rose grid place-items-center font-display font-bold text-rosedeep text-lg relative z-10 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-rose/30 transition-all duration-500">02</div>
+          <h3 class="font-display font-semibold text-lg mt-5">Design</h3>
+          <p class="mt-2 text-sm text-muted2 leading-relaxed">Custom UI concepts built around your brand, tested against real user flows.</p>
+        </div>
+        <div class="reveal relative group" data-reveal style="transition-delay:.12s">
+          <div class="w-16 h-16 rounded-full bg-white border-2 border-rose grid place-items-center font-display font-bold text-rosedeep text-lg relative z-10 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-rose/30 transition-all duration-500">03</div>
+          <h3 class="font-display font-semibold text-lg mt-5">Develop</h3>
+          <p class="mt-2 text-sm text-muted2 leading-relaxed">Clean, performant code — websites and software built for speed and scale.</p>
+        </div>
+        <div class="reveal relative group" data-reveal style="transition-delay:.18s">
+          <div class="w-16 h-16 rounded-full bg-white border-2 border-rose grid place-items-center font-display font-bold text-rosedeep text-lg relative z-10 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-rose/30 transition-all duration-500">04</div>
+          <h3 class="font-display font-semibold text-lg mt-5">Launch</h3>
+          <p class="mt-2 text-sm text-muted2 leading-relaxed">Full QA, analytics and tracking wired up before you ever go live.</p>
+        </div>
+        <div class="reveal relative group" data-reveal style="transition-delay:.24s">
+          <div class="w-16 h-16 rounded-full bg-white border-2 border-rose grid place-items-center font-display font-bold text-rosedeep text-lg relative z-10 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-rose/30 transition-all duration-500">05</div>
+          <h3 class="font-display font-semibold text-lg mt-5">Grow</h3>
+          <p class="mt-2 text-sm text-muted2 leading-relaxed">Ongoing SEO, iteration and support to keep compounding your results.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PROJECTS ============ -->
+<section id="work" class="relative bg-bg text-white overflow-hidden">
+  <svg class="divider-svg -mb-px rotate-180 text-paper" viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="currentColor" d="M0,40 C240,90 480,0 720,20 C960,40 1200,100 1440,30 L1440,0 L0,0 Z"/></svg>
+  <div class="aurora a3 bg-rose w-[26rem] h-[26rem] top-10 left-1/4 opacity-15"></div>
+
+  <div class="section-pad relative max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl reveal" data-reveal>
+      <span class="eyebrow text-rose2"><span class="bracket">04 /</span>Featured Projects</span>
+      <h2 class="font-display font-medium text-4xl sm:text-5xl mt-5 leading-tight">Real builds. <span class="italic grad-text">Real results.</span></h2>
+      <p class="mt-5 text-muted text-lg">A selection of websites and software products we've designed, engineered and shipped.</p>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="reveal tilt-card group relative rounded-2xl overflow-hidden glass" data-reveal>
+        <div class="h-56 bg-gradient-to-br from-rosedeep via-rose to-rose2 relative overflow-hidden">
+          <div class="absolute inset-0 opacity-90 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#141D23" stroke-width="1.5"><path d="M3 21v-8l9-6 9 6v8"/><path d="M9 21v-6h6v6"/></svg>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-bg/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-5">
+            <span class="text-sm text-white font-semibold flex items-center gap-2">View case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+        <div class="p-6">
+          <span class="eyebrow text-rose2"><span class="bracket">&lt;/&gt;</span>Property Technology</span>
+          <h3 class="font-display font-semibold text-xl mt-2">Northgate Estates Portal</h3>
+          <p class="mt-2 text-sm text-muted leading-relaxed">A custom listings and booking platform that cut manual viewings admin by 60%.</p>
+        </div>
+      </article>
+
+      <article class="reveal tilt-card group relative rounded-2xl overflow-hidden glass" data-reveal style="transition-delay:.06s">
+        <div class="h-56 bg-gradient-to-br from-rose via-rose2 to-rosedeep relative overflow-hidden">
+          <div class="absolute inset-0 opacity-90 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#141D23" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-bg/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-5">
+            <span class="text-sm text-white font-semibold flex items-center gap-2">View case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+        <div class="p-6">
+          <span class="eyebrow text-rose2"><span class="bracket">&lt;/&gt;</span>SEO &amp; Web Design</span>
+          <h3 class="font-display font-semibold text-xl mt-2">Bright Ledger Accounting</h3>
+          <p class="mt-2 text-sm text-muted leading-relaxed">Full site rebuild plus SEO strategy that tripled organic leads in 5 months.</p>
+        </div>
+      </article>
+
+      <article class="reveal tilt-card group relative rounded-2xl overflow-hidden glass" data-reveal style="transition-delay:.12s">
+        <div class="h-56 bg-gradient-to-br from-rose2 via-rosedeep to-rose relative overflow-hidden">
+          <div class="absolute inset-0 opacity-90 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#141D23" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-bg/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-5">
+            <span class="text-sm text-white font-semibold flex items-center gap-2">View case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+        <div class="p-6">
+          <span class="eyebrow text-rose2"><span class="bracket">&lt;/&gt;</span>SaaS Development</span>
+          <h3 class="font-display font-semibold text-xl mt-2">Kindred Clinics Scheduler</h3>
+          <p class="mt-2 text-sm text-muted leading-relaxed">A booking and patient-management SaaS now used across 12 clinic locations.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="relative bg-paper text-ink">
+  <svg class="divider-svg -mt-px text-bg" viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="currentColor" d="M0,40 C240,90 480,0 720,20 C960,40 1200,100 1440,30 L1440,0 L0,0 Z"/></svg>
+
+  <div class="section-pad max-w-5xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl mx-auto text-center reveal" data-reveal>
+      <span class="eyebrow justify-center text-rosedeep"><span class="bracket">05 /</span>Testimonials</span>
+      <h2 class="font-display font-medium text-4xl sm:text-5xl mt-5 leading-tight">Trusted by teams who <span class="italic grad-text">measure results.</span></h2>
+    </div>
+
+    <div class="mt-16 relative reveal" data-reveal>
+      <div class="overflow-hidden">
+        <div id="testiTrack" class="flex">
+          <div class="w-full shrink-0 px-2">
+            <blockquote class="rounded-2xl bg-white/70 border border-ink/5 p-10 text-center shadow-xl shadow-rose/5">
+              <span class="font-display text-6xl text-rose/30 leading-none">&ldquo;</span>
+              <p class="text-ink text-xl leading-relaxed font-display -mt-6">Danielle Builds rebuilt our site and rewired our SEO in the same project. Inbound enquiries nearly quadrupled by the second quarter.</p>
+              <div class="mt-6 flex gap-1 justify-center text-rose" aria-hidden="true">★★★★★</div>
+              <footer class="mt-4 flex items-center justify-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-rose to-rosedeep"></div>
+                <div class="text-sm text-left"><p class="font-semibold">Marcus Ellery</p><p class="text-muted2">Founder, Fenwick Capital</p></div>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="w-full shrink-0 px-2">
+            <blockquote class="rounded-2xl bg-white/70 border border-ink/5 p-10 text-center shadow-xl shadow-rose/5">
+              <span class="font-display text-6xl text-rose/30 leading-none">&ldquo;</span>
+              <p class="text-ink text-xl leading-relaxed font-display -mt-6">They didn't just design a portal, they automated our entire booking workflow. Our team gets hours back every single week.</p>
+              <div class="mt-6 flex gap-1 justify-center text-rose" aria-hidden="true">★★★★★</div>
+              <footer class="mt-4 flex items-center justify-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-rose2 to-rose"></div>
+                <div class="text-sm text-left"><p class="font-semibold">Priya Chandra</p><p class="text-muted2">Operations Lead, Northgate Estates</p></div>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="w-full shrink-0 px-2">
+            <blockquote class="rounded-2xl bg-white/70 border border-ink/5 p-10 text-center shadow-xl shadow-rose/5">
+              <span class="font-display text-6xl text-rose/30 leading-none">&ldquo;</span>
+              <p class="text-ink text-xl leading-relaxed font-display -mt-6">Fast, sharp, and genuinely invested in the numbers. The new scheduler platform now runs across all of our clinics.</p>
+              <div class="mt-6 flex gap-1 justify-center text-rose" aria-hidden="true">★★★★★</div>
+              <footer class="mt-4 flex items-center justify-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-rosedeep to-rose2"></div>
+                <div class="text-sm text-left"><p class="font-semibold">Dr. Sam Whitfield</p><p class="text-muted2">Director, Kindred Clinics</p></div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <button id="testiPrev" aria-label="Previous testimonial" class="magnetic absolute top-1/2 -translate-y-1/2 -left-4 lg:-left-14 w-11 h-11 rounded-full bg-white shadow-lg grid place-items-center hover:bg-rose hover:text-white transition-colors duration-300 text-ink">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <button id="testiNext" aria-label="Next testimonial" class="magnetic absolute top-1/2 -translate-y-1/2 -right-4 lg:-right-14 w-11 h-11 rounded-full bg-white shadow-lg grid place-items-center hover:bg-rose hover:text-white transition-colors duration-300 text-ink">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+
+      <div id="testiDots" class="mt-8 flex justify-center gap-2">
+        <button class="w-2.5 h-2.5 rounded-full bg-rose transition-all duration-300" data-dot="0" aria-label="Testimonial 1"></button>
+        <button class="w-2.5 h-2.5 rounded-full bg-ink/15 transition-all duration-300" data-dot="1" aria-label="Testimonial 2"></button>
+        <button class="w-2.5 h-2.5 rounded-full bg-ink/15 transition-all duration-300" data-dot="2" aria-label="Testimonial 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section id="contact" class="relative overflow-hidden bg-bg text-white">
+  <div class="section-pad relative max-w-4xl mx-auto px-6 text-center">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(196,121,111,0.18),transparent_60%)]"></div>
+    <div class="aurora a1 bg-rose w-[30rem] h-[30rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20"></div>
+
+    <div class="reveal relative" data-reveal>
+      <svg class="w-14 h-14 text-rose2 mx-auto mb-6 opacity-80" style="animation:none"><use href="#butterfly" width="56" height="56"/></svg>
+      <span class="eyebrow justify-center text-rose2"><span class="bracket">&lt;/&gt;</span>Let's Build</span>
+      <h2 class="font-display font-medium text-4xl sm:text-6xl mt-6 leading-tight">Ready to Build Something <span class="italic grad-text">Incredible?</span></h2>
+      <p class="mt-6 text-muted text-lg max-w-xl mx-auto">Book a free consultation and we'll map out exactly what your website, SEO and software should be doing for your business — no obligation.</p>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="#" class="magnetic btn-primary inline-flex items-center gap-2 rounded-full text-white font-semibold px-9 py-4 shadow-[0_10px_40px_rgba(196,121,111,0.4)] hover:-translate-y-0.5 transition-all duration-300">
+          Book Free Consultation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="mailto:hello@daniellebuilds.com" class="magnetic btn-outline inline-flex items-center gap-2 rounded-full border border-white/20 text-white font-semibold px-9 py-4">
+          hello@daniellebuilds.com
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-bg2 text-muted pt-20 pb-28 lg:pb-10 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-[1.3fr_0.7fr_0.7fr_0.9fr] gap-12">
+      <div>
+        <a href="#main" class="flex items-center gap-3 mb-5">
+          <svg class="w-9 h-9 text-rose2" style="animation:none"><use href="#butterfly" width="36" height="36"/></svg>
+          <span class="font-display font-semibold text-lg text-white">Danielle <span class="text-rose2 italic">Builds</span></span>
+        </a>
+        <p class="max-w-sm text-sm leading-relaxed">Building Websites. Building Software. Building Growth. A digital studio for founders, startups and property companies who want their online presence to actually work.</p>
+      </div>
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest text-white/80 mb-4">Services</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#services" class="hover:text-rose2 transition-colors">Website Design</a></li>
+          <li><a href="#services" class="hover:text-rose2 transition-colors">SEO</a></li>
+          <li><a href="#services" class="hover:text-rose2 transition-colors">AI Integrations</a></li>
+          <li><a href="#services" class="hover:text-rose2 transition-colors">Software Development</a></li>
+          <li><a href="#services" class="hover:text-rose2 transition-colors">Property Technology</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest text-white/80 mb-4">Studio</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#why" class="hover:text-rose2 transition-colors">Why Us</a></li>
+          <li><a href="#process" class="hover:text-rose2 transition-colors">Process</a></li>
+          <li><a href="#work" class="hover:text-rose2 transition-colors">Work</a></li>
+          <li><a href="#testimonials" class="hover:text-rose2 transition-colors">Testimonials</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest text-white/80 mb-4">Get in touch</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="mailto:hello@daniellebuilds.com" class="hover:text-rose2 transition-colors">hello@daniellebuilds.com</a></li>
+          <li><a href="#contact" class="hover:text-rose2 transition-colors">Book a consultation</a></li>
+          <li class="text-muted/70">United Kingdom</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-muted/60">
+      <p>© 2026 Danielle Builds. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-rose2 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-rose2 transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile sticky CTA -->
+<div id="mobileCta" class="lg:hidden fixed bottom-0 inset-x-0 z-40 glass px-5 pb-[calc(env(safe-area-inset-bottom)+14px)] pt-3.5 flex items-center gap-3">
+  <a href="#contact" class="btn-primary flex-1 text-center rounded-full text-white font-semibold text-sm px-5 py-3.5">Book Free Consultation</a>
+  <a href="tel:+441234567890" aria-label="Call Danielle Builds" class="w-12 h-12 shrink-0 rounded-full border border-white/20 grid place-items-center text-white">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<script>
+  // Scroll progress
+  const scrollProgress = document.getElementById('scrollProgress');
+  function onScrollProgress(){
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    scrollProgress.style.width = scrolled + '%';
+  }
+  document.addEventListener('scroll', onScrollProgress, { passive:true });
+  onScrollProgress();
+
+  // Sticky nav shrink + background on scroll
+  const navInner = document.getElementById('navInner');
+  const nav = document.getElementById('siteNav');
+  function onScrollNav(){
+    if (window.scrollY > 40){
+      nav.classList.add('shadow-lg');
+      navInner.classList.add('bg-bg/80','backdrop-blur-md','h-16');
+      navInner.classList.remove('h-20');
+    } else {
+      nav.classList.remove('shadow-lg');
+      navInner.classList.remove('bg-bg/80','backdrop-blur-md','h-16');
+      navInner.classList.add('h-20');
+    }
+  }
+  document.addEventListener('scroll', onScrollNav, { passive:true });
+  onScrollNav();
+
+  // Mobile menu toggle
+  const mobileBtn = document.getElementById('mobileBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const iconOpen = document.getElementById('iconOpen');
+  const iconClose = document.getElementById('iconClose');
+  mobileBtn.addEventListener('click', () => {
+    const expanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+    mobileBtn.setAttribute('aria-expanded', String(!expanded));
+    mobileMenu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    iconOpen.classList.remove('hidden');
+    iconClose.classList.add('hidden');
+    mobileBtn.setAttribute('aria-expanded','false');
+  }));
+
+  // Mobile sticky CTA reveal after hero
+  const mobileCta = document.getElementById('mobileCta');
+  const heroSection = document.querySelector('#main > section:first-of-type');
+  const ctaObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting && entry.boundingClientRect.top < 0){
+        mobileCta.classList.add('show');
+      } else {
+        mobileCta.classList.remove('show');
+      }
+    });
+  }, { threshold:0 });
+  if (heroSection) ctaObserver.observe(heroSection);
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // Process connector line draw
+  const processLine = document.querySelector('[data-process-line]');
+  if (processLine){
+    const lineObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting){
+          processLine.classList.add('is-visible');
+          lineObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    lineObserver.observe(processLine);
+  }
+
+  // Speed ring animation
+  const ring = document.querySelector('[data-ring]');
+  if (ring){
+    const ringObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting){
+          entry.target.style.strokeDashoffset = '2';
+          ringObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.5 });
+    ringObserver.observe(ring);
+  }
+
+  // Animated counters
+  const counters = document.querySelectorAll('[data-counter]');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        const el = entry.target;
+        const target = parseFloat(el.getAttribute('data-counter'));
+        const duration = 1400;
+        const start = performance.now();
+        function tick(now){
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const value = Math.floor(target * eased);
+          el.textContent = value;
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = target;
+        }
+        requestAnimationFrame(tick);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(el => counterObserver.observe(el));
+
+  // Custom cursor glow (desktop only)
+  const cursorGlow = document.getElementById('cursorGlow');
+  if (window.matchMedia('(pointer:fine)').matches){
+    window.addEventListener('mousemove', (e) => {
+      cursorGlow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%,-50%)`;
+    }, { passive:true });
+
+    // Magnetic buttons
+    document.querySelectorAll('.magnetic').forEach(el => {
+      el.addEventListener('mousemove', (e) => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width/2;
+        const y = e.clientY - rect.top - rect.height/2;
+        el.style.transform = `translate(${x*0.25}px, ${y*0.35}px)`;
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = 'translate(0,0)'; });
+    });
+
+    // 3D tilt cards
+    document.querySelectorAll('.tilt-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = `perspective(800px) rotateY(${x*6}deg) rotateX(${-y*6}deg) translateY(-4px)`;
+      });
+      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+  }
+
+  // Testimonial carousel
+  const track = document.getElementById('testiTrack');
+  const dots = document.querySelectorAll('[data-dot]');
+  const slides = track.children.length;
+  let current = 0;
+  let autoTimer;
+
+  function goTo(i){
+    current = (i + slides) % slides;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, idx) => {
+      d.classList.toggle('bg-rose', idx === current);
+      d.classList.toggle('bg-ink/15', idx !== current);
+      d.classList.toggle('w-6', idx === current);
+    });
+  }
+  function startAuto(){
+    autoTimer = setInterval(() => goTo(current + 1), 5500);
+  }
+  function stopAuto(){ clearInterval(autoTimer); }
+
+  document.getElementById('testiNext').addEventListener('click', () => { goTo(current+1); stopAuto(); startAuto(); });
+  document.getElementById('testiPrev').addEventListener('click', () => { goTo(current-1); stopAuto(); startAuto(); });
+  dots.forEach((d,i) => d.addEventListener('click', () => { goTo(i); stopAuto(); startAuto(); }));
+
+  const testiWrap = track.parentElement.parentElement;
+  testiWrap.addEventListener('mouseenter', stopAuto);
+  testiWrap.addEventListener('mouseleave', startAuto);
+
+  // touch swipe
+  let touchStartX = 0;
+  track.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive:true });
+  track.addEventListener('touchend', (e) => {
+    const diff = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(diff) > 40){ diff > 0 ? goTo(current-1) : goTo(current+1); stopAuto(); startAuto(); }
+  }, { passive:true });
+
+  goTo(0);
+  startAuto();
+
+  // Smooth-scroll for in-page anchors
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+      const id = this.getAttribute('href');
+      if (id.length > 1){
+        const target = document.querySelector(id);
+        if (target){
+          e.preventDefault();
+          target.scrollIntoView({ behavior:'smooth', block:'start' });
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
